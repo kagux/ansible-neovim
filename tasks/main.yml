@@ -64,8 +64,7 @@
         dest: "{{ neovim_config_dir }}/autoload/plug.vim"
         force: yes
 
-    - name: install | plugins
-      command: "{{ neovim_release.install_dir }}/bin/nvim '+silent! +PlugUpdate!' +qall!"
+
   tags:
     - bootstrap
     - configure
